@@ -1,0 +1,84 @@
+@import "@app/main.scss";
+
+.designing-svg {
+  height: 90px;
+
+  .st0 {
+    fill: $textcolor;
+  }
+  .st1 {
+    fill: $Color4;
+  }
+  #barline1 {
+    animation: 4s linear infinite rectangle-opacity;
+  }
+  #image-icon {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: translateY(22px);
+    animation: 4s linear infinite pencil-anim;
+  }
+  #html-icon {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: 6s linear infinite media-anim;
+  }
+  #barline2 {
+    transform: scale(0, 1);
+    transform-origin: left;
+    transform-box: fill-box;
+    animation: 3s linear infinite webanim-linefour;
+  }
+  #barline3 {
+    animation: 3s linear infinite rectangle-opacity;
+  }
+  #barline4 {
+    transform: scale(0, 1);
+    transform-origin: left;
+    transform-box: fill-box;
+    animation: 4s linear infinite webanim-linefour;
+  }
+  #barline8 {
+    transform: scale(0, 1);
+    transform-origin: left;
+    transform-box: fill-box;
+    animation: 4s linear infinite webanim-linefour;
+  }
+  #barline9, #barline5 {
+    animation: 3s linear infinite rectangle-opacity;
+  }
+  #barline10, #barline6 {
+    animation: 4s linear infinite rectangle-opacity;
+  }
+  #barline11, #barline7 {
+    animation: 5s linear infinite rectangle-opacity;
+  }
+}
+
+@keyframes media-anim {
+  0%,
+  60% {
+    transform: rotateY(0deg);
+  }
+  30% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes webanim-linefour {
+  0%,
+  100% {
+    transform: scale(0, 1);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes rectangle-opacity {
+  0%,
+  60% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}

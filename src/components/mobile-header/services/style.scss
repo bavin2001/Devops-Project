@@ -1,0 +1,112 @@
+@import "@app/main.scss";
+
+.service-middlealign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-inline: 100px;
+    
+    h2 {
+      font-weight: 300;
+      margin-block: 0;
+      margin-bottom: 45px;
+      font-size: 32px;
+      color: $headingColor;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .sm-row {
+        display: flex;
+        height: fit-content;
+        flex-direction: row;
+        width: 100%;
+
+      .col-item-mob {
+        flex: 0 0 33.3333%;
+        padding-inline: 15px;
+
+        a {
+          display: inline-block;
+          width: 100%;
+          padding-block: 35px;
+          text-align: center;
+          border-radius: 5px;
+          transition-duration: 0.3s;
+          border: 2px solid $LightBgColor;
+          background: $LightBgColor;
+
+          span {
+            display: block;
+            
+            .digitalmarketing-svg, .websitedesigning-svg, .softwaredevelopment-svg {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h6 {
+                width: 100%;
+                text-align: center;
+                font-size: 0.9vw;
+                padding: 0;
+                line-height: 1.2;
+                font-weight: 300;
+                margin: 30px 0px 5px 0px;
+                color: $headingColor;
+            }
+            h4 {
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding: 0;
+                margin: 0;
+                line-height: 1.2;
+                font-size: 1.4vw;
+                color: $headingColor;
+            }
+          }
+        }
+        .digital-marketing:first-of-type:hover {
+          border: 2px solid $Color1;
+        }
+        .website-designing:first-of-type:hover {
+          border: 2px solid $Color4;
+        }
+        .software-development:first-of-type:hover {
+          border: 2px solid $Color2;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 992px) {
+    .service-middlealign {
+        padding-inline: 15px;
+
+        h2 {
+            font-size: 26px;
+        }
+        .sm-row {
+          margin-inline: -5px;
+          padding: 0;
+            .col-item-mob {
+                padding-inline: 5px;
+                a {
+
+                  span {
+
+                    h6 {
+                      font-size: 14px !important;
+                    }
+                    h4 {
+                      font-size: 24px !important;
+                    }
+                  }
+                }
+            }
+        }
+    }
+  }

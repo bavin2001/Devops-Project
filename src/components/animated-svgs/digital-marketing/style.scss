@@ -1,0 +1,92 @@
+@import "@app/main.scss";
+
+.digital-marketing-svg {
+  height: 90px;
+
+  .st0 {
+    fill: $textcolor;
+  }
+  .st1 {
+    fill: $LightBgColor;
+  }
+  .st2 {
+    fill: $Color1;
+  }
+
+  #media {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: 6s linear infinite media-anim;
+    // fill: $Color1;
+  }
+  #pencil {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: translateY(22px);
+    animation: 4s linear infinite pencil-anim;
+  }
+
+  #Layer_6 {
+    #lline1 {
+      transform: scale(0, 1);
+      transform-origin: left;
+      transform-box: fill-box;
+      animation: 5s linear infinite webanim-linefour;
+    }
+    #lline2 {
+      transform: scale(0, 1);
+      transform-origin: left;
+      transform-box: fill-box;
+      animation: 3s linear infinite webanim-linefour;
+    }
+    #rect-one {
+        animation: 3s linear infinite rectangle-opacity;
+    }
+    #rect-two {
+        animation: 4s linear infinite rectangle-opacity;
+    }
+    #rect-two {
+        animation: 4s linear infinite rectangle-opacity;
+    }
+    #rect-four {
+        animation: 6s linear infinite rectangle-opacity;
+    }
+  }
+}
+
+@keyframes media-anim {
+  0%,
+  60% {
+    transform: rotateY(0deg);
+  }
+  30% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes pencil-anim {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(22px);
+  }
+}
+@keyframes webanim-linefour {
+  0%,
+  100% {
+    transform: scale(0, 1);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes rectangle-opacity {
+    0%, 60% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}

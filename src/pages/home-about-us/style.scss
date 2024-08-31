@@ -1,0 +1,74 @@
+@import "@app/main.scss";
+
+.aboutus-wrapper {
+ display: block;
+ margin-block: 90px;
+
+ .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .aboutus-inner-container {
+   display: flex;
+   // flex-wrap: wrap;
+   margin-left: -15px;
+   margin-right: -15px;
+
+   .about-items {
+    flex: 0 0 50%;
+    min-width: 50%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .about-middle-align {
+     display: table-cell;
+     vertical-align: middle;
+
+     .homepage-heading {
+      text-align: left;
+      width: 100%;
+      padding: 0;
+      margin: 0 0 45px 0;
+      display: block;
+      font-weight: 300;
+      font-size: 42px;
+      color: $headingColor;
+
+      b {
+       color: $Color4;
+      }
+     }
+     p {
+      text-align: justify;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 16px;
+      line-height: 28px;
+      color: $textcolor;
+      font-family: 'Roboto', sans-serif !important;
+     }
+     .readmorebtn {
+      display: inline-block;
+      clear: both;
+      float: left;
+      margin-top: 30px;
+      color: $headingColor;
+      border: 2px solid $headingColor !important;
+      font-size: 15px;
+      line-height: 35px;
+      font-weight: 600;
+      width: 120px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      position: relative;
+     }
+    }
+   }
+  }
+ }
+}

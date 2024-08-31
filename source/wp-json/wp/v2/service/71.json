@@ -1,0 +1,63 @@
+{
+    "id": 71,
+    "date": "2023-10-06T05:22:03",
+    "date_gmt": "2023-10-06T05:22:03",
+    "guid": {
+        "rendered": "http:\/\/localhost\/novavi\/?post_type=service&#038;p=71"
+    },
+    "modified": "2023-10-06T10:04:17",
+    "modified_gmt": "2023-10-06T10:04:17",
+    "slug": "seo",
+    "status": "publish",
+    "type": "service",
+    "link": "https:\/\/novavi.in\/demo\/service\/seo\/",
+    "title": {
+        "rendered": "SEO"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Boost Your Online Visibility with Novavi&#8217;s SEO Expertise<\/h2>\n\n\n\n<p>In the digital age, a robust online presence is paramount, and that&#8217;s where Novavi&#8217;s Search Engine Optimization (SEO) services come into play. Our SEO experts are dedicated to enhancing your website&#8217;s visibility on search engines, ensuring your brand stands out in the competitive online landscape. We employ a holistic approach, encompassing keyword research, on-page and off-page optimization, content strategy, and technical SEO, to improve your website&#8217;s rankings and drive organic traffic.<\/p>\n\n\n\n<p>To discuss how Novavi can elevate your online visibility and empower your business through SEO, reach out to us at <a href=\"tel:+91 7736013411\">+91 7736013411<\/a> or visit our <a href=\"https:\/\/chat.openai.com\/c\/link-to-contact-page\">Contact Page<\/a>. We&#8217;re committed to helping you reach your target audience effectively, enhance your online authority, and achieve tangible results. Partner with Novavi to unlock the full potential of your digital presence and lead the way in your industry.<\/p>\n",
+        "protected": false
+    },
+    "featured_media": 99,
+    "template": "",
+    "meta": {
+        "_vp_format_video_url": "",
+        "_vp_image_focal_point": []
+    },
+    "acf": [],
+    "_links": {
+        "self": [
+            {
+                "href": "https:\/\/novavi.in\/demo\/wp-json\/wp\/v2\/service\/71"
+            }
+        ],
+        "collection": [
+            {
+                "href": "https:\/\/novavi.in\/demo\/wp-json\/wp\/v2\/service"
+            }
+        ],
+        "about": [
+            {
+                "href": "https:\/\/novavi.in\/demo\/wp-json\/wp\/v2\/types\/service"
+            }
+        ],
+        "wp:featuredmedia": [
+            {
+                "embeddable": true,
+                "href": "https:\/\/novavi.in\/demo\/wp-json\/wp\/v2\/media\/99"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https:\/\/novavi.in\/demo\/wp-json\/wp\/v2\/media?parent=71"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https:\/\/api.w.org\/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

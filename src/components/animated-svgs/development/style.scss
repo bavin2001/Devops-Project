@@ -1,0 +1,134 @@
+@import "@app/main.scss";
+
+.development-svg {
+  height: 90px;
+
+  .st0 {
+    fill: $textcolor;
+  }
+  .st1 {
+    fill: $Color2;
+  }
+  #bar4 {
+    animation: 3s linear infinite rectangle-opacity;
+  }
+  #bar5 {
+    animation: 4s linear infinite rectangle-opacity;
+  }
+  #graph1 {
+    animation: 3s linear infinite rectangle-opacity;
+  }
+  #graph2 {
+    animation: 4s linear infinite rectangle-opacity;
+  }
+  #graph3 {
+    animation: 3.5s linear infinite rectangle-opacity;
+  }
+  #graph4 {
+    animation: 4.5s linear infinite rectangle-opacity;
+  }
+  #dots1 {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: translateX(120px);
+    animation: 4s linear infinite dotone-anim;
+  }
+  #dots2 {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: translateX(120px);
+    animation: 4s linear infinite dottow-anim;
+  }
+  #dots3 {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: translateX(120px);
+    animation: 4s linear infinite dothree-anim;
+  }
+  #bar1 {
+    transform: scale(0, 1);
+    transform-origin: right;
+    transform-box: fill-box;
+    animation: 5s linear infinite webanim-linefour;
+  }
+  #bar2 {
+    transform: scale(0, 1);
+    transform-origin: right;
+    transform-box: fill-box;
+    animation: 4s linear infinite webanim-linefour;
+  }
+  #bar3 {
+    transform: scale(0, 1);
+    transform-origin: right;
+    transform-box: fill-box;
+    animation: 3s linear infinite webanim-linefour;
+  }
+  #cogwheel {
+    animation: 4s linear infinite cogwheelanim;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes cogwheelanim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes webanim-linefour {
+  0%,
+  100% {
+    transform: scale(0, 1);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes rectangle-opacity {
+  0%,
+  60% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+@keyframes dotone-anim {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(120px);
+  }
+  60% {
+    transform: translateX(120px);
+  }
+}
+@keyframes dottow-anim {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(120px);
+  }
+  60% {
+    transform: translateX(120px);
+  }
+}
+@keyframes dothree-anim {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(120px);
+  }
+  60% {
+    transform: translateX(120px);
+  }
+}

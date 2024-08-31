@@ -1,0 +1,97 @@
+@import "@app/main.scss";
+
+.banner-btm-scroll {
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: relative;
+
+    span {
+        width: 185px;
+        position: relative;
+        display: flex;
+        left: 50%;
+        height: 85px;
+        margin-top: -80px;
+        margin-left: -92px;
+
+        a {
+            width: 18px;
+            height: 24px;
+            position: absolute;
+            left: 50%;
+            margin-left: -9px;
+            bottom: 0;
+            z-index: 1020;
+            border: none;
+            outline: none;
+            animation: mouse-animation 1.5s infinite alternate;
+            background: "@app/assets/img/mouse-icon.png" no-repeat;
+            transition-duration: 0s;
+            text-decoration: none;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                &:hover {
+                    bottom: 0;
+                }
+            }
+        }
+        svg {
+            height: 85px;
+            position: relative;
+            z-index: 990;
+            overflow: hidden;
+            vertical-align: middle;
+
+            .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: $YellowColor;
+                animation: 20s linear infinite scrollbg-anim;
+            }
+            .st1 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: $background;
+            }
+        }
+    }
+}
+
+@keyframes scrollbg-anim {
+    0% {
+        fill: $YellowColor;
+    }
+    25% {
+        fill: $Color1;
+    }
+    50% {
+        fill: $Color2;
+    }
+    75% {
+        fill: $Color3;
+    }
+    100% {
+        fill: $Color4;
+    }
+}
+
+@keyframes mouse-animation {
+    0% {
+        bottom: 20px;
+    }
+
+    70% {
+        bottom: 20px;
+    }
+
+    71% {
+        bottom: 20px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}

@@ -1,0 +1,190 @@
+@import "@app/main.scss";
+
+.mobile-menu-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1050;
+  left: 0;
+  top: 100%;
+  padding: 0;
+  transition-duration: 0.3s;
+  background-color: $header-background;
+
+  .menuclose-btn {
+    all: unset;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 66px;
+    width: 66px;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+
+    svg {
+      height: 66px;
+      width: 66px;
+
+      path {
+        fill: $textcolor;
+        height: 66px;
+        width: 66px;
+      }
+    }
+  }
+
+  .menuclose-btn:hover {
+    transform: rotate(-90deg);
+
+    svg {
+      path {
+        fill: $YellowColor;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .menuclose-btn,
+    .menuclose-btn:hover {
+      svg {
+        path {
+          fill: $BlackColor;
+        }
+      }
+    }
+  }
+
+  .container-fluid {
+    height: 100%;
+    width: 100%;
+    .row {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+
+      .mobileleft-menu {
+        height: 100%;
+        flex: 0 0 33.3333%;
+        background-color: $YellowColor;
+
+        .mobile-menu-wrap {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+
+          .menu-mobile-menu-container {
+            height: fit-content;
+            width: 100%;
+            text-align: center;
+
+            .menu {
+              width: 100%;
+
+              .menu-item {
+                width: 100%;
+                margin-block: 2px;
+                text-align: center;
+                position: relative;
+
+                &::before {
+                  width: 0%;
+                  right: 50%;
+                  position: absolute;
+                  top: 0;
+                  height: 100%;
+                  background-color: $BlackColor;
+                  content: "";
+                  z-index: 1;
+                  transition-duration: 0.3s;
+                }
+
+                a {
+                  display: block;
+                  position: relative;
+                  color: $BlackColor;
+                  width: 100%;
+                  font-size: 2vw;
+                  padding-block: 12px;
+                  transition-duration: 0.3s;
+                  z-index: 10;
+                  line-height: normal;
+                  text-decoration: none;
+                }
+                &::after {
+                  width: 0%;
+                  left: 50%;
+                  position: absolute;
+                  top: 0;
+                  height: 100%;
+                  background-color: $BlackColor;
+                  content: "";
+                  z-index: 1;
+                  transition-duration: 0.3s;
+                }
+              }
+              .menu-item:hover::before,
+              .menu-item:hover::after {
+                width: 50%;
+              }
+              .menu-item:hover {
+                a {
+                  color: $YellowColor;
+                }
+              }
+              .current-menu-item {
+                a {
+                  color: $YellowColor;
+                }
+                &::before,
+                &::after {
+                  width: 50%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .services-menu-con {
+        height: 100%;
+        flex: 0 0 66.6666%;
+      }
+    }
+    @media (max-width: 992px) {
+      .row {
+        flex-direction: column;
+
+        .mobileleft-menu {
+          width: 100%;
+          flex: 0 0 60%;
+
+          .mobile-menu-wrap {
+            .menu-mobile-menu-container {
+              .menu {
+                .menu-item {
+                  a {
+                    font-size: 28px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .services-menu-con {
+          flex: 0 0 40%;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .row {
+        .mobileleft-menu {
+          flex: 0 0 100%;
+        }
+        .services-menu-con {
+          display: none;
+        }
+      }
+    }
+  }
+}
